@@ -1,6 +1,44 @@
 Descripción de los comandos Git
-git clone: Descarga un repositorio remoto.
-git status: Muestra el estado actual del repositorio.
-git add: Agrega archivos al área de preparación para el commit.
-git commit: Crea un punto de control con un mensaje descriptivo.
-git push: Sube los cambios al repositorio remoto en GitHub.
+git clone:
+- Significado: Clona un repositorio remoto en tu máquina local.
+- Uso: Utilizado para descargar el contenido del repositorio forkeado.
+- Log de la consola:
+  Cloning into 'p1'...
+  remote: Enumerating objects: X, done.
+  remote: Counting objects: X, done.
+
+git status:
+- Significado: Muestra el estado actual de los archivos en el repositorio local.
+- Uso: Verifiqué qué cambios estaban preparados o sin rastrear.
+- Log de la consola:
+  On branch main
+  Your branch is up to date with 'origin/main'.
+  Nothing to commit, working tree clean.
+
+git add:
+- Significado: Agrega archivos al área de preparación (staging area).
+- Uso: Utilizado para preparar `git.txt` para el commit.
+- Log de la consola:
+  Changes to be committed:
+  new file: git.txt
+
+git commit:
+- Significado: Crea un snapshot del estado actual del repositorio.
+- Uso: Confirmé los cambios preparados con un mensaje descriptivo.
+- Log de la consola:
+  [main XXXXXX] Añadiendo documentación sobre comandos Git
+  1 file changed, 1 insertion(+)
+  create mode 100644 git.txt
+
+git push:
+- Significado: Sube los cambios del repositorio local al remoto.
+- Uso: Subí los cambios confirmados al repositorio en GitHub.
+- Log de la consola:
+  Enumerating objects: X, done.
+  Writing objects: X, done.
+
+git checkout:
+- Significado: Cambia entre ramas o restaura archivos en el repositorio.
+- Uso: Cambié a una nueva rama (si lo hiciste) o restauré cambios.
+- Log de la consola: (Escribe cualquier salida relevante si lo usaste).
+
