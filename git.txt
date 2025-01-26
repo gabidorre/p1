@@ -3,19 +3,22 @@ git clone:
 - Significado: Clona un repositorio remoto en tu máquina local.
 - Uso: Utilizado para descargar el contenido del repositorio forkeado.
 - Log de la consola:
-  Cloning into 'p1'...
-  remote: Enumerating objects: X, done.
-  remote: Counting objects: X, done.
+Cloning into 'p1'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 5 (from 1)
+Receiving objects: 100% (6/6), done.
 
 git status:
 - Significado: Muestra el estado actual de los archivos en el repositorio local.
 - Uso: Verifiqué qué cambios estaban preparados o sin rastrear.
 - Log de la consola:
-  On branch main
-  Your branch is up to date with 'origin/main'.
-  Nothing to commit, working tree clean.
+On branch main
+Your branch is up to date with 'origin/main'.
+nothing to commit, working tree clean
 
 git add:
+--> Antes de agregar el archivo he usado "echo "Descripción de los comandos Git" > git.txt" para crearlo
 - Significado: Agrega archivos al área de preparación (staging area).
 - Uso: Utilizado para preparar `git.txt` para el commit.
 - Log de la consola:
@@ -26,19 +29,37 @@ git commit:
 - Significado: Crea un snapshot del estado actual del repositorio.
 - Uso: Confirmé los cambios preparados con un mensaje descriptivo.
 - Log de la consola:
-  [main XXXXXX] Añadiendo documentación sobre comandos Git
-  1 file changed, 1 insertion(+)
-  create mode 100644 git.txt
+[main 9802b0a] Añadiendo documentación sobre comandos Git
+ Committer: Gabriela De Dorremochea <gabrieladedorremochea@MacBook-Air-de-Gabriela.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+    git config --global --edit
+After doing this, you may fix the identity used for this commit with:
+    git commit --amend --reset-author
+ 1 file changed, 1 insertion(+)
+ create mode 100644 git.txt
 
 git push:
 - Significado: Sube los cambios del repositorio local al remoto.
 - Uso: Subí los cambios confirmados al repositorio en GitHub.
 - Log de la consola:
-  Enumerating objects: X, done.
-  Writing objects: X, done.
+Username for 'https://github.com': gabidorre
+Password for 'https://gabidorre@github.com': 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 362 bytes | 362.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/gabidorre/p1.git
+   07720b5..9802b0a  main -> main
 
 git checkout:
 - Significado: Cambia entre ramas o restaura archivos en el repositorio.
 - Uso: Cambié a una nueva rama (si lo hiciste) o restauré cambios.
-- Log de la consola: (Escribe cualquier salida relevante si lo usaste).
+- Log de la consola: 
+Your branch is up to date with 'origin/main'.
 
