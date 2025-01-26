@@ -59,7 +59,7 @@ To https://github.com/gabidorre/p1.git
 
 git checkout:
 - Significado: Cambia entre ramas o restaura archivos en el repositorio.
-- Uso: Cambié a una nueva rama (si lo hiciste) o restauré cambios.
+- Uso: Volví al main.
 - Log de la consola: 
 Your branch is up to date with 'origin/main'.
 
