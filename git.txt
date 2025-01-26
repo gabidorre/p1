@@ -1,1 +1,6 @@
 Descripción de los comandos Git
+git clone: Descarga un repositorio remoto.
+git status: Muestra el estado actual del repositorio.
+git add: Agrega archivos al área de preparación para el commit.
+git commit: Crea un punto de control con un mensaje descriptivo.
+git push: Sube los cambios al repositorio remoto en GitHub.
